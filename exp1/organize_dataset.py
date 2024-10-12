@@ -9,7 +9,7 @@ def create_category_folders(base_dir, new_dir):
     os.makedirs(os.path.join(new_dir, 'val', 'dog'), exist_ok=True)
 
 def copy_images_to_folders(base_dir, new_dir):
-    # 移动训练集的图片
+    # 复制训练集的图片到新文件夹
     for img_file in os.listdir(os.path.join(base_dir, 'train')):
         img_path = os.path.join(base_dir, 'train', img_file)
         if 'cat' in img_file:
@@ -17,7 +17,7 @@ def copy_images_to_folders(base_dir, new_dir):
         elif 'dog' in img_file:
             shutil.copy2(img_path, os.path.join(new_dir, 'train', 'dog', img_file))
 
-    # 移动验证集的图片
+    # 复制验证集的图片到新文件夹
     for img_file in os.listdir(os.path.join(base_dir, 'val')):
         img_path = os.path.join(base_dir, 'val', img_file)
         if 'cat' in img_file:
