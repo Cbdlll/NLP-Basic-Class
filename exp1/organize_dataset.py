@@ -1,7 +1,7 @@
 import os
 import shutil
 
-def create_category_folders(base_dir, new_dir):
+def create_category_folders(new_dir):
     # 创建类别文件夹
     os.makedirs(os.path.join(new_dir, 'train', 'cat'), exist_ok=True)
     os.makedirs(os.path.join(new_dir, 'train', 'dog'), exist_ok=True)
