@@ -7,7 +7,6 @@ from tqdm import tqdm
 
 #define Hyperparameters
 input_size = 128
-sequence_length = 62
 hidden_size = 128
 num_layers = 2
 num_classes = 2
