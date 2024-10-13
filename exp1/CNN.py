@@ -65,7 +65,6 @@ class CNN(nn.Module):
             nn.BatchNorm1d(128),
             nn.ReLU(),
             nn.Linear(128, 2),
-            nn.Softmax(dim=1)
         )
         
     def forward(self, x):  
