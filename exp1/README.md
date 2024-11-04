@@ -1,1 +1,1 @@
-实现在给定数据集上的基于DNN、CNN、RNN的图片分类
+## Implement image classification on a given dataset using DNN, CNN, and RNN.
